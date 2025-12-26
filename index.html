@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Server Bug List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Server Changelog & Bug List</h1>
+
+    <!-- BUG LIST -->
+    <section class="card">
+      <h2>> List of Bug</h2>
+      <ul>
+        <li>
+          <span class="status open">OPEN</span>
+          <strong>/resetdamage</strong> ga ada effect, udah di reset tapi tetap wounded
+        </li>
+
+        <li>
+          <span class="status fixed">FIXED</span>
+          <strong>HBE Bug</strong>, thirst ga ngurang, relog dari server HBE reset jadi 100 lagi
+        </li>
+
+        <li>
+          <span class="status fixed">FIXED</span>
+          <strong>GPS</strong> ngasih lokasi ga sesuai
+        </li>
+      </ul>
+    </section>
+
+    <!-- CHANGES -->
+    <section class="card">
+      <h2>> Changes</h2>
+      <ul>
+        <li>
+          <span class="status open">TODO</span>
+          Minimal GPS (tree location di <code>/findtree</code> aja)
+        </li>
+
+        <li>
+          <span class="status open">TODO</span>
+          Hapus job Reflenish
+        </li>
+
+        <li>
+          <span class="status done">DONE</span>
+          Ilegal job ga ditampilin di GPS menu bagian job
+        </li>
+
+        <li>
+          <span class="status open">TODO</span>
+          Remake pizza job ke sidejob
+        </li>
+
+        <li>
+          <span class="status done">DONE</span>
+          Ambil job trucker move ke Flint biar new player lebih familiar
+        </li>
+      </ul>
+    </section>
+
+    <!-- FEATURE ADD -->
+    <section class="card">
+      <h2>> Feature Add</h2>
+      <ul>
+        <li>
+          <span class="status done">DONE</span>
+          <strong>/nlock</strong> for nearest lock vehicle
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Last Update: <span id="date"></span></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("date").textContent =
+      new Date().toLocaleDateString("id-ID");
+  </script>
+
+</body>
+</html>

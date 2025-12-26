@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #1e293b;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.status {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.status.open {
+  background: #7c2d12;
+  color: #fed7aa;
+}
+
+.status.fixed,
+.status.done {
+  background: #064e3b;
+  color: #a7f3d0;
+}
+
+code {
+  background: #1e293b;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #94a3b8;
+  font-size: 14px;
+}
